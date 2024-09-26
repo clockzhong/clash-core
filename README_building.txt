@@ -17,6 +17,9 @@
     表示要编译在操作系统linux，CPU是X86-64位系统上运行的可执行文件
     make windows-amd64
     表示要编译在操作系统windows，CPU是X86-64位系统上运行的可执行文件
+    make linux-armv5
+    表示要编译在操作系统linux，CPU是armv5系统上运行的可执行文件, 该配置可以运行在华硕RT-AC1200G+路由器上(https://www.asus.com/ch-en/supportonly/rt-ac1200g+/helpdesk/), 虽然该路由器上的cpu是armv7，但却只能运行armv5的配置，不知道为什么。
+    
     操作系统的选择有:darwin/linux/freebsd/windows
     cpu的选择有:amd64/arm64/386/armv5/armv6/armv7/arm64/mips/mipsle/mips64/mips64le/riscv64/loong64
     操作系统和CPU的组合并非自由充分组合，有些组合是不支持的，详情参看Makefile的内容。
